@@ -1,0 +1,126 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Index */
+.index {
+    position: relative;
+    width: 1440px;
+    height: 2250px;
+    background: #FFFFFF;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    width: 1520.13px;
+    height: 116px;
+    left: -80.13px;
+    top: -12.49px;
+    /* Add background and other styles here */
+}
+
+/* Line 1 */
+.line1 {
+    position: absolute;
+    width: 1440px;
+    height: 0px;
+    left: 0px;
+    top: 73px;
+    border: 1px solid #000000;
+    /* Add other styles here */
+}
+
+/* Rectangle 1 */
+.rectangle1 {
+    position: absolute;
+    width: 1440px;
+    height: 73px;
+    left: 0px;
+    top: 0px;
+    background: #10100A;
+    /* Add other styles here */
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    width: 354px;
+    height: 116px;
+    left: -80.13px;
+    top: -12.49px;
+    /* Add background and other styles here */
+}
+
+/* Logo-Photo */
+.logo-photo {
+    position: absolute;
+    width: 58px;
+    height: 68px;
+    left: 37px;
+    top: 2px;
+    background: url('Untitled.jpg');
+    /* Add other styles here */
+}
+
+/* Palestra */
+.palestra {
+    position: absolute;
+    width: 354px;
+    height: 116px;
+    left: -80.13px;
+    top: -12.49px;
+    font-family: 'Chomsky';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 99px;
+    text-align: right;
+    color: #BFAC75;
+    /* Add other styles here */
+}
+
+/* Browse */
+.browse {
+    position: absolute;
+    width: 155px;
+    height: 49px;
+    left: 699px;
+    top: 9px;
+    /* Add styles for Browse */
+}
+
+/* About */
+.about {
+    position: absolute;
+    width: 155px;
+    height: 49px;
+    left: 887px;
+    top: 9px;
+    /* Add styles for About */
+}
+
+/* Reviews */
+.reviews {
+    position: absolute;
+    width: 155px;
+    height: 49px;
+    left: 1076px;
+    top: 9px;
+    /* Add styles for Reviews */
+}
+
+/* Contact */
+.contact {
+    position: absolute;
+    width: 155px;
+    height: 49px;
+    left: 1265px;
+    top: 9px;
+    /* Add styles for Contact */
+}
+
+/* Add styles for other sections */
