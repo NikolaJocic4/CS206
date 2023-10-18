@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Chomsky';
+    src: url('../Fonts/Chomsky.otf') format('woff');
+    /* Add additional font formats if available (e.g., woff2, ttf) */
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* Reset default margin and padding for all elements */
 * {
     margin: 0;
@@ -8,39 +16,28 @@
 /* Index */
 .index {
     position: relative;
-    width: 1440px;
-    height: 2250px;
+    width: 100vw;
+    height: 400vh;
     background: #FFFFFF;
 }
 
 /* Navbar */
 .navbar {
     position: absolute;
-    width: 1520.13px;
-    height: 116px;
-    left: -80.13px;
-    top: -12.49px;
+    width: 100vw;
+    height: 7vh;
+    left: 0vw;
+    top: 0vh;
     /* Add background and other styles here */
-}
-
-/* Line 1 */
-.line1 {
-    position: absolute;
-    width: 1440px;
-    height: 0px;
-    left: 0px;
-    top: 73px;
-    border: 1px solid #000000;
-    /* Add other styles here */
 }
 
 /* Rectangle 1 */
 .rectangle1 {
     position: absolute;
-    width: 1440px;
-    height: 73px;
-    left: 0px;
-    top: 0px;
+    width: 100vw;
+    height: 7vh;
+    left: 0vw;
+    top: 0vh;
     background: #10100A;
     /* Add other styles here */
 }
@@ -48,48 +45,56 @@
 /* Logo */
 .logo {
     position: absolute;
-    width: 354px;
-    height: 116px;
-    left: -80.13px;
-    top: -12.49px;
+    width: 9vw;
+    height: 3vw;
+    flex-shrink: 0;
+    /* background-size: cover; */
+    left: 6vw;
+    top: .25vw;
+    background: url('../images/Logo.svg') no-repeat;
+    background-size: contain;
     /* Add background and other styles here */
 }
 
-/* Logo-Photo */
+/* Logo-Photo
 .logo-photo {
     position: absolute;
-    width: 58px;
-    height: 68px;
-    left: 37px;
-    top: 2px;
-    background: url('Untitled.jpg');
-    /* Add other styles here */
-}
+    width: 10%;
+    height: 15%;
+    flex-shrink: 0;
+    left: 124.52px;
+    top: 14.49px;
+    background: url('../images/logo-photo.jpg');
+    Add other styles here
+}  */
 
-/* Palestra */
+/* Palestra
 .palestra {
     position: absolute;
-    width: 354px;
-    height: 116px;
-    left: -80.13px;
-    top: -12.49px;
-    font-family: 'Chomsky';
+    width: 100%px;
+    height: 100%px;
+    left: 202px;
+    top: 0px;
+    font-family: 'Chomsky', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 75px;
+    font-size: 390%;
     line-height: 99px;
     text-align: right;
     color: #BFAC75;
-    /* Add other styles here */
-}
+    Add other styles here
+} */
 
 /* Browse */
 .browse {
     position: absolute;
-    width: 155px;
-    height: 49px;
-    left: 699px;
-    top: 9px;
+    width: 1vw;
+    height: 1vh;
+    left: 50vw;
+    top: 1.5vh;
+    font-size: 3.5vh;
+    color:#FFF ;
+    font-family: 'Chomsky', sans-serif;
     /* Add styles for Browse */
 }
 
