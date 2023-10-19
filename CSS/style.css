@@ -13,119 +13,34 @@
     box-sizing: border-box;
 }
 
-/* Index */
-.index {
-    position: relative;
-    width: 100vw;
-    height: 400vh;
-    background: #FFFFFF;
-}
-
-/* Navbar */
-.navbar {
-    position: absolute;
-    width: 100vw;
-    height: 7vh;
-    left: 0vw;
-    top: 0vh;
-    /* Add background and other styles here */
-}
-
-/* Rectangle 1 */
-.rectangle1 {
-    position: absolute;
-    width: 100vw;
-    height: 7vh;
-    left: 0vw;
-    top: 0vh;
-    background: #10100A;
-    /* Add other styles here */
-}
-
-/* Logo */
-.logo {
-    position: absolute;
-    width: 9vw;
-    height: 3vw;
-    flex-shrink: 0;
-    /* background-size: cover; */
-    left: 6vw;
-    top: .25vw;
-    background: url('../images/Logo.svg') no-repeat;
-    background-size: contain;
-    /* Add background and other styles here */
-}
-
-/* Logo-Photo
-.logo-photo {
-    position: absolute;
-    width: 10%;
-    height: 15%;
-    flex-shrink: 0;
-    left: 124.52px;
-    top: 14.49px;
-    background: url('../images/logo-photo.jpg');
-    Add other styles here
-}  */
-
-/* Palestra
-.palestra {
-    position: absolute;
-    width: 100%px;
-    height: 100%px;
-    left: 202px;
-    top: 0px;
-    font-family: 'Chomsky', sans-serif;
-    font-style: normal;
+li, a{
+    font-family:'Chomsky', sans-serif;
     font-weight: 400;
-    font-size: 390%;
-    line-height: 99px;
-    text-align: right;
-    color: #BFAC75;
-    Add other styles here
-} */
-
-/* Browse */
-.browse {
-    position: absolute;
-    width: 1vw;
-    height: 1vh;
-    left: 50vw;
-    top: 1.5vh;
-    font-size: 3.5vh;
-    color:#FFF ;
-    font-family: 'Chomsky', sans-serif;
-    /* Add styles for Browse */
+    font-size: 40px;
+    text-decoration: none;
 }
 
-/* About */
-.about {
-    position: absolute;
-    width: 155px;
-    height: 49px;
-    left: 887px;
-    top: 9px;
-    /* Add styles for About */
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-/* Reviews */
-.reviews {
-    position: absolute;
-    width: 155px;
-    height: 49px;
-    left: 1076px;
-    top: 9px;
-    /* Add styles for Reviews */
+.nav_links{
+    list-style-type: none;
 }
 
-/* Contact */
-.contact {
-    position: absolute;
-    width: 155px;
-    height: 49px;
-    left: 1265px;
-    top: 9px;
-    /* Add styles for Contact */
+.nav_links li{
+    display: inline-block;
+    padding: 0vh 2em;
 }
 
-/* Add styles for other sections */
+header{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 0vh 2.5%;
+    background-color: #10100A;
+}
