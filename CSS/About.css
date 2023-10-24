@@ -88,6 +88,10 @@ footer{
     height: auto;
 }
 
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .container {
     display: flex; 
     margin: 5vh 7vw;
