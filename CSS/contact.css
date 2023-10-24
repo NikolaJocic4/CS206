@@ -88,14 +88,26 @@ footer{
     height: auto;
 }
 
-.button{
-    border-radius: 18px;
+button{
+    border-radius: 10px;
+    border: none;
     background: #928353;
+    font-family: Chomsky;
+    align-self: center;
+    color: aliceblue;
+    font-size: 25px;
+    width: 150px;
+    height: 50px;
+    margin-left: 50%;
+    transform:translateX(-50%);
 }
 
 h1{ 
     text-decoration: none;
     font-weight: normal;
+    text-align: center;
+    font-family: Chomsky;
+    font-size: 80px;
 }
 
 .line {
@@ -105,24 +117,48 @@ h1{
     margin: auto;
 }
 
-h3{
+h2{
     text-decoration: none;
     font-weight: normal;
+    font-family: Chomsky;
+    font-size: 40px;
 }
 
 p{
     font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
 }
 
 .flex-container{
     display: flex;
     justify-content: center;
     width: 80%;
-    height: 100%;
-    margin: 0% 10%;
+    margin: 7% 10%;
+    overflow: auto;
 }
 /* Style the left and right columns */
-.left, .right{
-    padding: 10px;
+.left{
+    width: 50%;
+    padding-left: 2px;
+} 
+
+/* .left button{
     text-align: center;
+} */
+
+.right{
+    text-align: left;
+    border-left: solid;
+    border-width: 2px;
+    width:50%;
+    padding-left:2%;
 }
+
+input{
+    width: 92%;
+    height: 2vh;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 18px;
+}
+
