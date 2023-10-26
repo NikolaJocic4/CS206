@@ -104,13 +104,12 @@ p{
 h1{ 
     text-decoration: none;
     font-weight: normal;
+    text-align: center;
+    margin: 10vh;
+    font-size: 90px;
+    font-family: Chomsky;
 }
 
-h5{
-    text-decoration: none;
-    font-weight: lighter;
-    font-style: italic;
-}
 .headers {
     position: relative;
     padding:10px;
@@ -119,9 +118,21 @@ h5{
     margin-top: 11.5vh;
 }
 
-.article-image{
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center;
+.sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10vh auto;
+    overflow: auto;
+}
+
+a img {
+    margin: 0 auto; /* Center the image horizontally within the anchor */
+}
+
+a {
+    display: block; /* Change the display property to block */
+    text-align: center; /* Center the text/content inside the anchor element */
 }
