@@ -103,6 +103,7 @@ h1{
     font-family: Chomsky;
     font-size: 4.5em;
     margin-top: 11.5vh;
+    cursor: pointer;
 }
 
 .line {

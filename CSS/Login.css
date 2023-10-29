@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Chomsky';
+    src: url('../Fonts/Chomsky.otf') format('woff');
+    /* Add additional font formats if available (e.g., woff2, ttf) */
+    font-weight: 400;
+    font-style: normal;
+}
+/* @media only screen and (max-width: 768px) {
+    For mobile phones:
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+   */
+
+   
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../public/images/salisbury-cathedral-oil-canvas-lower-marsh-close-18292.svg);
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    background:white;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    width: 30%;
+    height: 80%;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+input{
+    width: 92%;
+    height: 2vh;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button{
+    margin-top: 2vh;
+    border-radius: 10px;
+    border: none;
+    background: #928353;
+    font-family: Inter;
+    align-self: center;
+    color: aliceblue;
+    font-size: 20px;
+    width: 120px;
+    height: 45px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: underline;
+    color: #928353;
+}
+
+.register_span{
+    padding-top: 10vh;
+    font-family: Inter;
+    font-size: 20px;
+}
+
+.rights_span{
+    position: absolute; 
+    bottom: 2vh;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-45%);
+    font-family: Inter;
+}
