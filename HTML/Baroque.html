@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Baroque.css">
     <title>Baroque</title>
+    <link rel="icon" href=
+"../Images/Title_logo.png"
+          type="image/x-icon">
 </head>
 <body>
     <header>
         <a href="index.html" class="logo"><img src="../images/Logo.svg" alt="" width="200vw" height="70vh" class="logo"></a>
         <nav>
             <ul class="nav_links">
-                <li><a href="Browse.html" style="color: #FFF">Browse</a></li>
-                <li><a href="About.html" style="color: #BFAC75">About</a></li>
-                <li><a href="Review.html" style="color: #928353">Review</a></li>
-                <li><a href="contact.html" style="color: #7A8FAA">Contact</a></li>
+                <li><a href="Browse.html" id="hoverBrowse">Browse</a></li>
+                <li><a href="About.html" id="hoverAbout">About</a></li>
+                <li><a href="Review.html" id="hoverReview">Review</a></li>
+                <li><a href="contact.html" id="hoverContact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +26,18 @@
         <div class="banner">
             <img src="../Images/baroque-banner.svg">
         </div>
-        <div class="sections">
+        <div class="arrow-container">
+            <i onclick="myFunction()" class="arrow down"></i>
+        </div>
+
+        <script>
+            function myFunction() {
+              const element = document.getElementById("content");
+              element.scrollIntoView();
+            }
+            </script>
+
+        <div class="sections" id="content">
             <h1 style="text-align: center;">History</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Nulla et odio vitae urna aliquam blandit. Mauris id est ante. 

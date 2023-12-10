@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/About.css">
     <title>About</title>
+    <link rel="icon" href=
+"../Images/Title_logo.png"
+          type="image/x-icon">
 </head>
 <body>
     <header>
         <a href="index.html" class="logo"><img src="../images/Logo.svg" alt="" width="200vw" height="70vh" class="logo"></a>
         <nav>
             <ul class="nav_links">
-                <li><a href="Browse.html" style="color: #FFF">Browse</a></li>
-                <li><a href="About.html" style="color: #BFAC75">About</a></li>
-                <li><a href="Review.html" style="color: #928353">Review</a></li>
-                <li><a href="contact.html" style="color: #7A8FAA">Contact</a></li>
+                <li><a href="Browse.html" id="hoverBrowse">Browse</a></li>
+                <li><a href="About.html" id="hoverAbout">About</a></li>
+                <li><a href="Review.html" id="hoverReview">Review</a></li>
+                <li><a href="contact.html" id="hoverContact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -24,10 +27,21 @@
             <img src="../Images/banner.jpg">
         </div>
 
+        <div class="arrow-container">
+            <i onclick="myFunction()" class="arrow down"></i>
+        </div>
+
+        <script>
+            function myFunction() {
+              const element = document.getElementById("content");
+              element.scrollIntoView();
+            }
+            </script>
+
         <!--Who We Are Column-->
-        <h1 class="headers" style="margin-left: 7vw;">Who we are</h1>
+        <h1 class="headers" style="margin-left: 7vw;" id="content">Who we are</h1>
         <div class="container">
-            <p style="padding-right: 2vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <p style="padding-right: 2vw; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Nulla et odio vitae urna aliquam blandit. Mauris id est ante. 
                 Duis tristique pharetra nibh sit amet ullamcorper. Ut sed gravida libero. 
                 In dictum, ex a bibendum imperdiet, quam elit mollis elit, et vestibulum magna lacus eu diam. 
@@ -59,7 +73,7 @@
         <h1 class="headers" style="margin-left: 7vw;">History</h1>
         <div class="container">
             <div style="display: flex; flex-direction: column;">
-            <p style="padding-right: 2vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <p style="padding-right: 2vw; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Nulla et odio vitae urna aliquam blandit. Mauris id est ante. 
                 Duis tristique pharetra nibh sit amet ullamcorper. Ut sed gravida libero. 
                 In dictum, ex a bibendum imperdiet, quam elit mollis elit, et vestibulum magna lacus eu diam. 
@@ -80,7 +94,7 @@
                 Ut nec tristique augue. Vestibulum vulputate laoreet tortor ac mattis. 
                 Mauris malesuada lobortis orci. Aenean sit amet tortor lacinia, ornare augue in, auctor dui. 
                 usce pretium sagittis maximus.  </p>
-                <p style="padding-right: 2vw; margin-top: 10vh;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <p style="padding-right: 2vw; margin-top: 10vh; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nulla et odio vitae urna aliquam blandit. Mauris id est ante. 
                     Duis tristique pharetra nibh sit amet ullamcorper. Ut sed gravida libero. 
                     In dictum, ex a bibendum imperdiet, quam elit mollis elit, et vestibulum magna lacus eu diam. 
@@ -112,7 +126,7 @@
         <!--History Column-->
         <h1 class="headers" style="margin-left: 7vw;">Purpose</h1>
         <div class="container" style="margin-bottom: 12vh;">
-            <p style="padding-right: 2vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <p style="padding-right: 2vw; text-align: justify; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Nulla et odio vitae urna aliquam blandit. Mauris id est ante. 
                 Duis tristique pharetra nibh sit amet ullamcorper. Ut sed gravida libero. 
                 In dictum, ex a bibendum imperdiet, quam elit mollis elit, et vestibulum magna lacus eu diam. 

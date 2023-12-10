@@ -13,7 +13,15 @@
   }
    */
 
-   
+   ::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: black ;
+  }
+  
+  ::selection {
+    color: white;
+    background: black;
+  }
 
 /* Reset default margin and padding for all elements */
 * {
@@ -90,17 +98,15 @@ footer{
 
 p{
     font-family: 'Times New Roman', Times, serif;
-    width: 80%;
+    width: 60%;
     text-align: left;
+    text-align: justify;
+    font-size: 24px;
 }
 
 .container {
     display: flex; 
     margin: 5vh 7vw;
-}
-
-p{
-    font-size: 24px;
 }
 
 h1{ 
@@ -148,3 +154,80 @@ h5{
     font-size: 25px;
     margin-top: 3vh;
 }
+
+.arrow-container{
+    position: relative; 
+    text-align: center; 
+    margin-top: 2vh; 
+    font-size: xx-large;
+  transition: transform 0.8s;
+  }
+
+.arrow {
+    border: solid black;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 20px;
+    transform-origin: 50% 50%;
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .arrow-container:hover {
+    transform: scale(1.5);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #hoverBrowse {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #FFF;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  #hoverBrowse:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 white;
+  }
+
+  #hoverAbout {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #BFAC75;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  #hoverAbout:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 white;
+  }
+
+  #hoverReview {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #928353;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  #hoverReview:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 white;
+  }
+
+  #hoverContact {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #7A8FAA;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  #hoverContact:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 white;
+  }

@@ -13,7 +13,15 @@
   }
    */
 
-   
+   ::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: black ;
+  }
+  
+  ::selection {
+    color: white;
+    background: black;
+  }
 
 /* Reset default margin and padding for all elements */
 * {
@@ -66,7 +74,15 @@ button{
     width: 120px;
     height: 45px;
     cursor: pointer;
+    transition: 0.8s;
 }
+
+button:hover {
+    background-color: white;
+    color: black ;
+    transform: scale(1.1);
+    border: 2px solid black;
+  }
 
 a{
     text-decoration: underline;

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Register.css">
     <title>Register</title>
+    <link rel="icon" href=
+"../Images/Title_logo.png"
+          type="image/x-icon">
 </head>
 <body>
     <div class="register">
@@ -20,7 +23,14 @@
                 <label>Password:</label><br>
                 <input type="text" style="height: 4vh;"><br><br>
                 </form>
-                <button>Register</button>
+                <button onclick="showAlert()">Register</button>
+
+                <script>
+                    // Function to show the alert
+                    function showAlert() {
+                        alert("Your account has been registered!");
+                    }
+                </script>
                 
         </div>
         <span class="rights_span">All rights reserved. ©</span>

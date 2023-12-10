@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Museums.css">
     <title>Museums</title>
+    <link rel="icon" href=
+"../Images/Title_logo.png"
+          type="image/x-icon">
 </head>
 <body>
     <!--Navbar-->
     <header>
-        <a href="index.html" class="logo"><img src="../images/logo_new.svg" alt="" class="logo"></a>
+        <a href="index.html" class="logo"><img src="../images/Logo.svg" alt="" width="200vw" height="70vh" class="logo"></a>
         <nav>
             <ul class="nav_links">
-                <li><a href="Browse.html" style="color: #FFF">Browse</a></li>
-                <li><a href="About.html" style="color: #BFAC75">About</a></li>
-                <li><a href="Review.html" style="color: #928353">Review</a></li>
-                <li><a href="contact.html" style="color: #7A8FAA">Contact</a></li>
+                <li><a href="Browse.html" id="hoverBrowse">Browse</a></li>
+                <li><a href="About.html" id="hoverAbout">About</a></li>
+                <li><a href="Review.html" id="hoverReview">Review</a></li>
+                <li><a href="contact.html" id="hoverContact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +27,18 @@
                     <img src="../Images/museums-banner.svg">
             </div>
 
-            <div class="reviews">
+            <div class="arrow-container">
+                <i onclick="myFunction()" class="arrow down"></i>
+            </div>
+    
+            <script>
+                function myFunction() {
+                  const element = document.getElementById("content");
+                  element.scrollIntoView();
+                }
+                </script>
+
+            <div class="reviews" id="content">
                 <h1 style="text-align: left; padding-bottom: 10vh;">The New York Metropolitan Museum of Art</h1>
                 <img src="../Images/met-museum.svg" alt="" width="30%" style="float: right; margin-bottom: 40px;" >
                 <p>
