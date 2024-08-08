@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Register.css">
+    <title>Register</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="icon" href=
+"../Images/Title_logo.png"
+          type="image/x-icon">
+</head>
+<body>
+    <div class="register">
+        <div class="items">
+            <img src="../public/images/logo_brown_register.svg" alt="" width="40%" style="padding-bottom: 5vh; padding-top:5vh; cursor: pointer;" onclick="window.location.href = 'Index.html';">
+            <form action="Adduser.php" method="post" style="font-family: Inter; font-size:20px; padding-left: 5vh; width: 80%;">
+                <label style="text-align: left;">Name:</label><br>
+                <input type="text"style="height: 4vh;"><br><br>
+                <label style="text-align: left;">Email:</label><br>
+                <input type="text"style="height: 4vh;"><br><br>
+                <label style="text-align: left;">Username:</label><br>
+                <input type="text"style="height: 4vh;" name="username"><br><br>
+                <label>Password:</label><br>
+                <input type="text" style="height: 4vh;" name="password"><br><br>
+                <button onclick="showAlert()">Register</button>
+                </form>
+                
+
+                <script>
+                    // Function to show the alert
+                    function showAlert() {
+                        alert("Your account has been registered!");
+                    }
+                </script>
+                
+        </div>
+        <span class="rights_span">All rights reserved. ©</span>
+    </div>
+</body>
+</html>

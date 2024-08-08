@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'Chomsky';
+    src: url('../Fonts/Chomsky.otf') format('woff');
+    /* Add additional font formats if available (e.g., woff2, ttf) */
+    font-weight: 400;
+    font-style: normal;
+}
+
+   ::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: black ;
+  }
+  
+  ::selection {
+    color: white;
+    background: black;
+  }
+   
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*-------NAVBAR------------*/
+/*-------NAVBAR------------*/
+/*-------NAVBAR------------*/
+
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand img {
+  width: 150px; /* Adjust the size as needed */
+}
+
+.navbar-brand {
+  padding-left: 20px; /* Adjust the padding to move the logo inward */
+}
+
+
+.navbar-nav .nav-link {
+  font-family: 'Chomsky', sans-serif;
+  font-size: 34px; /* Increase font size */
+  margin-right: 100px;
+}
+
+.navbar.sticky {
+  background-color: black;
+}
+
+
+/*-------NAVBAR END------------*/
+/*-------NAVBAR END------------*/
+/*-------NAVBAR END------------*/
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+section {
+  height: 100vh;
+  
+  scroll-snap-align: start;
+  color:white;
+}
+
+.containers{
+  scroll-snap-type:y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.one{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.two{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.three{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.four{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Images/AboutUsBackground.svg'); /* Replace 'background.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensure the background image is behind the content */
+}
+
+
+
+/* ------------ FOOOTER --------------------- */
+/* ------------ FOOOTER --------------------- */
+/* ------------ FOOOTER --------------------- */
+/* ------------ FOOOTER --------------------- */
+
+.footer-01 {
+  padding: 7em 0;
+  background-image: url('../Images/footer-background-imageV2.svg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.footer-01:after {
+  position: absolute;
+  top: -300px;
+  left: -100px;
+  width: 800px;
+  height: 800px;
+  content: '';
+  background: url(../images/blob-shape.svg);
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+  opacity: .05;
+}
+
+.footer-01 a {
+  color: rgb(219, 215, 215);
+}
+
+.footer-01 p {
+  color: #fff;
+}
+
+.footer-01 .copyright {
+  color: rgb(219, 215, 215);
+}
+
+.footer-01 .footer-heading {
+  font-family: 'Chomsky', sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+  position: relative;
+}
+
+.footer-01 .footer-heading:after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #7A8FAA;
+}
+
+.footer-01 ul.list-unstyled li a {
+  color: #fff;
+}
+
+.footer-01 .block-21 .text .heading a {
+  color: #fff;
+}
+
+.footer-01 .block-21 .text .heading a:hover,
+.block-21 .text .heading a:active,
+.block-21 .text .heading a:focus {
+  text-decoration: none;
+}
+
+.footer-01 .block-21 .meta > div {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: -7%;
+  margin-left: 10%;
+}
+
+.footer-01 .block-21 .meta > div a {
+  color: rgb(219, 215, 215);
+  
+}
+
+.block-21 .img {
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+
+.block-21 .text { 
+  width: calc(100% - 100px);
+}
+
+.block-21 .text .heading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  padding-left: 10%;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: white; /* Blue color */
+  /* Additional styles */
+  padding: 1%;
+}
+
+ul{
+  margin: 0;
+  padding: 0 !important;
+}
+
+.hovering-list-quick-links:hover{
+  color: rgb(219, 215, 215) !important;
+}
+
+/* ------------ FOOOTER END--------------------- */
+/* ------------ FOOOTER END--------------------- */
+/* ------------ FOOOTER END--------------------- */
+/* ------------ FOOOTER END--------------------- */
+
+
+/*---------TYPEWRITING ANIMATION*----------------------*/
+
+.profileName h1{
+    padding-top:10%;
+    font-family: 'Chomsky' !important;
+    font-size: 100px;
+    white-space:nowrap;
+    margin-left: -15%;
+    padding-bottom: 10%;
+}
+
+.profileWriteButton button{
+    margin-top:18%;
+    width: 120px;
+    background-color: #928353;
+    font-family: 'Chomsky' !important;
+    border-color: transparent !important;
+    font-size: 24px;
+}
+
+.profileWriteButton button:hover {
+    background-color: #694816 !important;
+}
+
+.columnHead{
+    font-size: 40px;
+    font-weight: normal !important;
+    
+}
+
+th, td {
+    padding: 10px;
+  }
+  th:nth-child(1),
+  td:nth-child(1) { /* First column aligns to the left */
+    text-align: left;
+  }
+  th:nth-child(2),
+  td:nth-child(2) { /* Second column aligns to the center */
+    text-align: center;
+  }
+  th:nth-child(3),
+  td:nth-child(3) { /* Third column aligns to the right */
+    text-align: right;
+  }
+
+  td {
+    vertical-align: middle;
+  }
+
+  .delete-button{
+    background-color: #928353 !important;
+    font-family: 'Chomsky' !important;
+    border-color: transparent !important;
+    width: 90px;
+    font-size: 20px !important;
+  }
+
+  .delete-button:hover{
+    background-color: #694816 !important;
+  }
+
+  .edit-button{
+    background-color:#E3CC8C !important;
+    font-family: 'Chomsky' !important;
+    border-color: transparent !important;
+    width: 90px;
+    font-size: 20px !important;
+  }
+
+  .edit-button:hover{
+    background-color:#928353 !important;
+  }
+
+  .log-out-bt{
+    display: inline-block; 
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Chomsky';
+    font-size: 70px;
+    cursor:pointer;
+  }

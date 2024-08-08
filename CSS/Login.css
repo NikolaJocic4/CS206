@@ -85,12 +85,6 @@ button{
     transition: 0.8s;
 }
 
-button:hover {
-    background-color: white;
-    color: black ;
-    transform: scale(1.1);
-    border: 2px solid black;
-  }
 
 a{
     text-decoration: underline;
